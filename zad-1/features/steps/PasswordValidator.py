@@ -13,7 +13,6 @@ def step_impl(context):
 def step_impl(context, minUppercaseLettersCount):
 	context.passwordValidator.minUppercaseLettersCount = int(minUppercaseLettersCount)
 
-
 @given("the password requires at least (?P<minLettersCount>[0-9]+) letters?")
 def step_impl(context, minLettersCount):
 	context.passwordValidator.minLettersCount = int(minLettersCount)
